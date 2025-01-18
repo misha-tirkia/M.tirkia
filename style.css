@@ -1,0 +1,527 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+
+}
+
+.navbar{
+    justify-content:space-between ;
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul{
+    text-align: center;
+}
+
+.navbar ul li{
+    border: solid red 2px;
+    border-radius: 20px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;  
+    transition: 0.05s; 
+}
+
+.navbar ul li a:hover{
+    color: red;
+    transition: 0.05s;
+    font-size: 20px;
+}
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* ვიდეო დარჩება ფონზე */
+    overflow: hidden;
+}
+
+
+.logo img{
+    height: 60px;
+    margin: 10px;
+}
+
+.info{
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.gmail{
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+    color: red;
+    margin-left: 400px;
+}
+
+.nom{
+    color: red;
+    margin-left: 400px;
+}
+
+.about{
+    color: white;
+    text-align: center;
+}
+
+.name{
+    color: red;
+    margin-left: 450px;
+}
+
+.lastname{
+    color: red;
+    margin-left: 450px;
+}
+
+.age{
+    color: red;
+    margin-left: 450px;
+}
+
+.profile img{
+    height: 200px;
+    border-color: rgba(138, 43, 226, 0.5);
+    box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8);
+    margin-left: 270px;
+    margin-top: -270px;
+    display: grid; /* Grid აქტიური */
+    grid-template-columns: repeat(2, 1fr); /* 2 სვეტი */
+    gap: 10px;
+}
+
+.name2{
+    color: white;
+    margin-left: 280px;
+}
+
+
+.circle{
+    position: fixed;
+    height: 28px;
+    width: 28px;
+    border: solid white 1px;
+    border-radius: 100%;
+    transition: 0.2s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.window{
+    height: 200px;
+    width: 260px;
+    background-color: white;
+    border: solid whitesmoke 3px;
+    border-radius: 10px;
+    margin-left: 480px;
+    margin-top: 40px;
+    display: none;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3);
+
+}
+
+#btn1{
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+    margin-left: 320px;
+    border-radius: 100px;
+    font-size: 15px;
+    border: solid cyan;
+}
+
+
+#btn1:hover{
+    transform: scale(1.07);
+    transition: 0.2s;
+}
+
+.closebtn{
+    height: 20px;
+    width: 20px;
+    margin-left: 126px;
+    margin-bottom: 170px;
+    border: solid orange;
+    border-radius: 100px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.closebtn:hover{
+    transform: scale(1.09);
+    transition: 0.2s;
+}
+
+.project1{
+    width: 380px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8);
+    border-radius: 8px;
+    margin-left: 140px;
+    margin-top: 120px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.project1:hover{
+    transform: scale(1.04);
+}
+
+.projimg1{
+    height: 270px;
+    width: 260;
+}
+
+
+.atropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atrophoto{
+    border-radius: 20px;
+    height: 350px;
+    width: 350px;
+    margin-left: 790px;
+    margin-top: 200px;
+    box-shadow: 0 0 30px 10px rgba(138, 43, 226, 0.8);
+}
+
+/* Общие настройки */
+* {
+    box-sizing: border-box; /* ისე, რომ padding და margin არ იწვევს ელემენტის ზომის გადაჭარბებას */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Mobiile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0; /* თავიდან ავიცილოთ ნებისმიერი მარჟინები */
+    }
+
+    .window{
+        margin-left: 210px;
+    }
+
+    #btn1{
+        margin-left: 300px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* ნავიგაცია მორგებულია */
+    }
+
+    .navbar ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .gmail, .nom, .name, .lastname, .age, .name2, .educ, .proj {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: 150px;
+        width: auto;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .window{
+        margin-left: 145px;
+    }
+
+    #btn1{
+        margin-left: 210px;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    .window{
+        margin-left: 130px;
+    }
+
+    #btn1{
+        margin-left: 190px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .window{
+        margin-left: 100px;
+    }
+
+    #btn1{
+        margin-left: 170px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .window{
+        margin-left: 80px;
+    }
+
+    #btn1{
+        margin-left: 150px;
+    }
+}
+
+/* Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0; /* თავიდან დააწესეთ სწორი padding */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .profile img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: 150px;
+        width: auto;
+        border-radius: 50%;
+    }
+
+    .gmail, .nom, .name, .lastname, .age, .name2, .educ, .proj {
+        text-align: center;
+    }
+}
+/* Mobiile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0; /* თავიდან ავიცილოთ ნებისმიერი მარჟინები */
+    }
+
+    .window{
+        margin-left: 210px;
+    }
+
+    #btn1{
+        margin-left: 300px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* ნავიგაცია მორგებულია */
+    }
+
+    .navbar ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .gmail, .nom, .name, .lastname, .age, .name2, .educ, .proj {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: 150px;
+        width: auto;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .window{
+        margin-left: 145px;
+    }
+
+    #btn1{
+        margin-left: 210px;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    .window{
+        margin-left: 130px;
+    }
+
+    #btn1{
+        margin-left: 190px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .window{
+        margin-left: 100px;
+    }
+
+    #btn1{
+        margin-left: 170px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .window{
+        margin-left: 80px;
+    }
+
+    #btn1{
+        margin-left: 150px;
+    }
+}
+
+/* Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0; /* თავიდან დააწესეთ სწორი padding */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .profile img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: 150px;
+        width: auto;
+        border-radius: 50%;
+    }
+
+    .gmail, .nom, .name, .lastname, .age, .name2, .educ, .proj {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-background {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .profile img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: 150px;
+        width: auto; /* ავტომატურად მორგებული იქნება */
+        border-radius: 50%;
+    }
+
+    /* Other adjustments for better visibility */
+    .project1 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .atrophoto {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .video-background {
+        width: 100%; /* სრულად იკავებს ეკრანის სიგანეს */
+        height: auto; /* სიმაღლე ავტომატურად მორგებულია */
+        object-fit: cover; /* უკეთესი გაადიდება, რომ ფოტომ არ დაკარგოს პროპორციები */
+    }
+}
+
+
+/* To remove excessive white space */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* ის თავიდან აიცილებს გვერდის ჰორიზონტალური გადახაზვას */
+}
+
+/* If there is excessive margin/padding in some divs, we limit it */
+.container, .content, .profile-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+/* To remove excessive white space */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* ის თავიდან აიცილებს გვერდის ჰორიზონტალური გადახაზვას */
+}
+
+/* If there is excessive margin/padding in some divs, we limit it */
+.container, .content, .profile-container {
+    max-width: 100%;
+    overflow: hidden;
+}
