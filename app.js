@@ -1,7 +1,9 @@
 document.addEventListener('mousemove', (e) => {
-    const circle = document.querySelector('.circle');
-    circle.style.top = e.clientY + 'px';
-    circle.style.left = e.clientX + 'px';
+    var circle = document.querySelector('.circle');
+    var offsetX = 26;
+    var offsetY = 29;
+    circle.style.top = e.clientY + offsetY + 'px';
+    circle.style.left = e.clientX + offsetX + 'px';
 });
 
 var btn1 = document.getElementById('btn1');
