@@ -257,10 +257,19 @@ body{
     background-color: white;
     box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8);
     border-radius: 8px;
-    position: relative; left: 130px; top: 180px;
     overflow: hidden;
     transition: 0.2s;
     animation: slidein 0.8s ease-in-out;
+    
+}
+
+.projects {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+    justify-content: left;
+    
 }
 
 @keyframes slidein {
@@ -273,13 +282,14 @@ body{
     }
 }
 
+
+
 .project2{
     width: 300px;
     height: 360px;
     background-color: white;
     box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8);
     border-radius: 8px;
-    position: relative; left: 510px; bottom: 180px;
     overflow: hidden;
     transition: 0.2s;
     z-index: 100;
@@ -338,16 +348,11 @@ body{
     transform: scale(1.09);
 }
 
-.navtext {
-    color: rgba(138, 43, 226, 0.8);;
-    font-size: 30px;
-    position: absolute;
-    left: 530px;
-}
+
 
 .window2 {
-    width: 300px;  /* შესაფერისი სიგანე */
-    height: 200px; /* შესაფერისი სიმაღლე */
+    width: 300px;  
+    height: 200px;  
     border-radius: 4px;
     background-color: white;
     align-content: center;
@@ -397,19 +402,14 @@ body{
         left: 150px;
         overflow: hidden;
     }
-
-    .project2{
-        width: 300px;
-        height: 360px;
-        background-color: white;
-        box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8);
-        border-radius: 8px;
-        position: relative; left: 50px; top: 250px;
-        overflow: hidden;
-        transition: 0.2s;
-        z-index: 100;
-        animation: slidein 0.8s ease-in-out;
+    
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        margin: 200px;
     }
+
 
     .navtext {
         color: rgba(138, 43, 226, 0.8);;
@@ -484,12 +484,7 @@ body{
         margin-top: 10px; /* Space between image and name2 */
     }
 
-    .project1 {
-        width: 300px;
-        height: 360px;
-        margin-top: 100px;
-       
-    }
+    
 
     .window {
         width: 80%;
@@ -508,7 +503,6 @@ body{
 }
 
 @media (max-width: 768px) {
-    /* For mobile screens */
     .contactcont {
         width: 85%;
         position: absolute;
@@ -542,6 +536,11 @@ body{
         margin: 5px 0;
         padding: 8px;
 
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
     }
 
     .logo img {
@@ -594,20 +593,6 @@ body{
             
         }
     
-
-    .project1 {
-        width: 300px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 200px;
-        position:relative; left: 5px;
-        justify-content: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        overflow:hidden;
-
-    }
 
     
 
@@ -670,17 +655,6 @@ body{
         
     }
 
-    .project2{
-        width: 80%;
-        background-color: white;
-        box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8);
-        border-radius: 8px;
-        position: relative; left: 50px; top: 250px;
-        overflow: hidden;
-        transition: 0.2s;
-        z-index: 100;
-        animation: slidein 0.8s ease-in-out;
-    }
     
     .my-atropos img {
         width: 100%;
@@ -704,10 +678,7 @@ body{
         margin-top: 10px;
     }
 
-    .project1 {
-        width: 80%;
-        margin: 20px auto;
-    }
+    
 
     .window {
         width: 90%;
